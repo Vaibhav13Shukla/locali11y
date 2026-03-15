@@ -1,0 +1,16 @@
+{
+  "name": "Locali11y",
+  "short_name": "Locali11y",
+  "description": "Find the accessibility your translations broke",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

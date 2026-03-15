@@ -1,0 +1,47 @@
+name: Lingo.dev Translation Sync
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'src/messages/en.json'
+  push:
+    branches: [main]
+    paths:
+      - 'src/messages/en.json'
+
+jobs:
+  translate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Sync translations with Lingo.dev
+        uses: anthropics/lingo-action@v1
+        with:
+          api-key: ${{ secrets.LINGO_API_KEY }}
+        env:
+          LINGO_API_KEY: ${{ secrets.LINGO_API_KEY }}

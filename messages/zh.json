@@ -1,0 +1,166 @@
+{
+  "common": {
+    "source": "源",
+    "target": "目标",
+    "loading": "加载中...",
+    "error": "发生错误"
+  },
+  "nav": {
+    "dashboard": "仪表板",
+    "audits": "审计",
+    "newAudit": "新建审计",
+    "signOut": "退出登录"
+  },
+  "dashboard": {
+    "title": "您的无障碍审计",
+    "subtitle": "发现翻译导致的无障碍问题",
+    "totalAudits": "审计总数",
+    "avgScore": "平均分数",
+    "localeIssues": "特定语言问题",
+    "recentAudits": "最近审计",
+    "noAudits": "暂无审计",
+    "noAuditsDesc": "创建您的第一个无障碍审计以开始"
+  },
+  "audit": {
+    "new": {
+      "title": "新建无障碍审计",
+      "subtitle": "审计网站以发现翻译特定的无障碍问题",
+      "urlLabel": "网站URL",
+      "urlPlaceholder": "https://example.com",
+      "detectButton": "检测",
+      "detectedLocales": "检测到的语言",
+      "noLocalesDetected": "未检测到其他语言",
+      "sourceLocale": "源语言",
+      "targetLocales": "目标语言",
+      "manualLocale": "添加语言",
+      "addLocale": "添加",
+      "startAudit": "运行无障碍审计",
+      "running": "正在审计网站",
+      "runningDescription": "这可能需要一些时间。我们正在检查所有语言的无障碍情况。",
+      "errors": {
+        "invalidUrl": "请输入以http://或https://开头的有效URL",
+        "fetchFailed": "获取网站失败",
+        "noLocales": "请至少选择一个目标语言",
+        "auditFailed": "运行审计失败"
+      }
+    },
+    "results": {
+      "backToAudits": "返回审计",
+      "auditResults": "审计结果",
+      "runAnother": "运行另一个审计",
+      "sourceBaseline": "源基准",
+      "worstLocale": "最差语言",
+      "localeSpecificIssues": "特定语言问题",
+      "localeSpecificDesc": "仅存在于翻译版本中的问题，源语言中没有",
+      "overallScore": "总体分数",
+      "allPassed": "所有检查通过！",
+      "generateFixes": "生成修复建议",
+      "exportFixes": "导出修复"
+    },
+    "severity": {
+      "critical": "严重",
+      "important": "重要",
+      "info": "信息"
+    },
+    "categories": {
+      "aria": "ARIA",
+      "images": "图片",
+      "forms": "表单",
+      "headings": "标题",
+      "navigation": "导航",
+      "seo": "SEO和链接",
+      "meta": "元数据和SEO",
+      "lang": "语言"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "欢迎回来",
+      "subtitle": "登录您的账户以继续",
+      "emailLabel": "邮箱",
+      "emailPlaceholder": "you@example.com",
+      "passwordLabel": "密码",
+      "passwordPlaceholder": "输入您的密码",
+      "submit": "登录",
+      "noAccount": "没有账户？",
+      "signUpLink": "注册"
+    },
+    "register": {
+      "title": "创建账户",
+      "subtitle": "开始审计翻译间的无障碍情况",
+      "fullNameLabel": "全名",
+      "fullNamePlaceholder": "张三",
+      "emailLabel": "邮箱",
+      "emailPlaceholder": "you@example.com",
+      "passwordLabel": "密码",
+      "passwordPlaceholder": "创建密码",
+      "submit": "创建账户",
+      "hasAccount": "已有账户？",
+      "signInLink": "登录"
+    },
+    "errors": {
+      "generic": "发生错误。请重试。"
+    }
+  },
+  "landing": {
+    "hero": {
+      "title": "您的网站在英语中是无障碍的。",
+      "titleHighlight": "日语呢？",
+      "subtitle": "Locali11y审计您网站每个语言版本的无障碍情况。发现未翻译的ARIA标签、缺失的alt文本和损坏的locale属性 — 在用户发现之前。",
+      "cta": "开始免费审计",
+      "ctaSecondary": "查看工作原理",
+      "trustedBy": "超过2,500个团队信赖"
+    },
+    "demo": {
+      "title": "无障碍审计",
+      "complete": "完成",
+      "scoreEn": "英语",
+      "scoreJa": "日语",
+      "scoreEs": "西班牙语",
+      "issue1": "西班牙语中未翻译的ARIA标签",
+      "issue2": "缺少html lang属性"
+    },
+    "features": {
+      "title": "Locali11y检查什么",
+      "comparative": {
+        "title": "比较审计",
+        "description": "在每个locale检查20个无障碍属性，并与您的源语言进行比较。发现仅存在于翻译版本中的问题。"
+      },
+      "localeSpecific": {
+        "title": "特定语言问题",
+        "description": "识别保留为英语的ARIA标签、从不等翻译的alt文本、未更改的页面标题以及非英语版本中缺失的表单标签。"
+      },
+      "fixes": {
+        "title": "修复建议",
+        "description": "为每个特定语言问题生成翻译修复建议。导出为JSON并粘贴到您的locale文件中。"
+      },
+      "compliance": {
+        "title": "符合欧盟无障碍法案",
+        "description": "欧盟无障碍法案（2025年）要求所有支持语言的无障碍数字产品。Locali11y帮助您合规。"
+      }
+    },
+    "howItWorks": {
+      "title": "工作原理",
+      "step1": {
+        "title": "粘贴您的URL",
+        "description": "输入任何多语言网站URL。Locali11y自动检测可用的语言版本。"
+      },
+      "step2": {
+        "title": "运行审计",
+        "description": "20个目标无障碍检查在每个locale运行。结果与您的源语言进行比较。"
+      },
+      "step3": {
+        "title": "修复损坏的内容",
+        "description": "准确查看哪些元素在哪些语言中损坏。获取修复建议并导出为JSON。"
+      }
+    },
+    "stats": {
+      "checks": "20项检查",
+      "checksDesc": "针对i18n × a11y交叉点",
+      "locales": "任何语言",
+      "localesDesc": "从您的网站自动检测",
+      "time": "< 30秒",
+      "timeDesc": "完整比较审计"
+    }
+  }
+}

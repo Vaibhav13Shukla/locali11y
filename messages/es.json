@@ -1,0 +1,171 @@
+{
+  "common": {
+    "source": "Origen",
+    "target": "Destino",
+    "loading": "Cargando...",
+    "error": "Ocurrió un error"
+  },
+  "app": {
+    "name": "Locali11y",
+    "tagline": "Encuentra la accesibilidad que tus traducciones rompieron.",
+    "poweredBy": "Desarrollado por Lingo.dev"
+  },
+  "nav": {
+    "dashboard": "Panel",
+    "audits": "Auditorías",
+    "newAudit": "Nueva Auditoría",
+    "signOut": "Cerrar sesión"
+  },
+  "dashboard": {
+    "title": "Tus Auditorías de Accesibilidad",
+    "subtitle": "Encuentra los problemas de accesibilidad que las traducciones rompen",
+    "totalAudits": "Total de Auditorías",
+    "avgScore": "Puntuación Promedio",
+    "localeIssues": "Problemas Específicos de Idioma",
+    "recentAudits": "Auditorías Recientes",
+    "noAudits": "Sin auditorías todavía",
+    "noAuditsDesc": "Crea tu primera auditoría de accesibilidad para comenzar"
+  },
+  "audit": {
+    "new": {
+      "title": "Nueva Auditoría de Accesibilidad",
+      "subtitle": "Audita un sitio web para encontrar problemas de accesibilidad específicos de traducción",
+      "urlLabel": "URL del sitio web",
+      "urlPlaceholder": "https://ejemplo.com",
+      "detectButton": "Detectar",
+      "detectedLocales": "Idiomas Detectados",
+      "noLocalesDetected": "No se detectaron idiomas adicionales",
+      "sourceLocale": "Idioma de Origen",
+      "targetLocales": "Idiomas Destino",
+      "manualLocale": "Agregar idioma",
+      "addLocale": "Agregar",
+      "startAudit": "Ejecutar Auditoría de Accesibilidad",
+      "running": "Auditando Sitio Web",
+      "runningDescription": "Esto puede tomar un momento. Estamos verificando la accesibilidad en todos los idiomas.",
+      "errors": {
+        "invalidUrl": "Por favor ingresa una URL válida que comience con http:// o https://",
+        "fetchFailed": "Error al obtener el sitio web",
+        "noLocales": "Por favor selecciona al menos un idioma destino",
+        "auditFailed": "Error al ejecutar la auditoría"
+      }
+    },
+    "results": {
+      "backToAudits": "Volver a Auditorías",
+      "auditResults": "Resultados de Auditoría",
+      "runAnother": "Ejecutar Otra Auditoría",
+      "sourceBaseline": "Línea Base de Origen",
+      "worstLocale": "Peor Idioma",
+      "localeSpecificIssues": "Problemas Específicos de Idioma",
+      "localeSpecificDesc": "Problemas que existen solo en versiones traducidas, no en el idioma de origen",
+      "overallScore": "Puntuación General",
+      "allPassed": "¡Todas las verificaciones pasaron!",
+      "generateFixes": "Generar Sugerencias de Corrección",
+      "exportFixes": "Exportar Correcciones"
+    },
+    "severity": {
+      "critical": "Crítico",
+      "important": "Importante",
+      "info": "Info"
+    },
+    "categories": {
+      "aria": "ARIA",
+      "images": "Imágenes",
+      "forms": "Formularios",
+      "headings": "Encabezados",
+      "navigation": "Navegación",
+      "seo": "SEO y Enlaces",
+      "meta": "Meta y SEO",
+      "lang": "Idioma"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Bienvenido de nuevo",
+      "subtitle": "Inicia sesión en tu cuenta para continuar",
+      "emailLabel": "Correo electrónico",
+      "emailPlaceholder": "tu@ejemplo.com",
+      "passwordLabel": "Contraseña",
+      "passwordPlaceholder": "Ingresa tu contraseña",
+      "submit": "Iniciar sesión",
+      "noAccount": "¿No tienes una cuenta?",
+      "signUpLink": "Regístrate"
+    },
+    "register": {
+      "title": "Crear una cuenta",
+      "subtitle": "Comienza a auditar la accesibilidad en traducciones",
+      "fullNameLabel": "Nombre completo",
+      "fullNamePlaceholder": "Juan Pérez",
+      "emailLabel": "Correo electrónico",
+      "emailPlaceholder": "tu@ejemplo.com",
+      "passwordLabel": "Contraseña",
+      "passwordPlaceholder": "Crea una contraseña",
+      "submit": "Crear cuenta",
+      "hasAccount": "¿Ya tienes una cuenta?",
+      "signInLink": "Iniciar sesión"
+    },
+    "errors": {
+      "generic": "Ocurrió un error. Por favor intenta de nuevo."
+    }
+  },
+  "landing": {
+    "hero": {
+      "title": "Tu sitio web es accesible en inglés.",
+      "titleHighlight": "¿Qué pasa con el japonés?",
+      "subtitle": "Locali11y audita la accesibilidad en cada versión de idioma de tu sitio. Encuentra etiquetas ARIA sin traducir, texto alternativo faltante y atributos de locale rotos — antes que tus usuarios lo hagan.",
+      "cta": "Comenzar Auditoría Gratis",
+      "ctaSecondary": "Ver Cómo Funciona",
+      "trustedBy": "Usado por más de 2,500 equipos"
+    },
+    "demo": {
+      "title": "Auditoría de Accesibilidad",
+      "complete": "Completo",
+      "scoreEn": "Inglés",
+      "scoreJa": "Japonés",
+      "scoreEs": "Español",
+      "issue1": "Etiquetas ARIA sin traducir en Español",
+      "issue2": "Falta atributo html lang"
+    },
+    "features": {
+      "title": "Qué Verifica Locali11y",
+      "comparative": {
+        "title": "Auditoría Comparativa",
+        "description": "Verifica 20 atributos de accesibilidad en cada locale y los compara con tu idioma fuente. Encuentra problemas que solo existen en versiones traducidas."
+      },
+      "localeSpecific": {
+        "title": "Problemas Específicos de Locale",
+        "description": "Identifica etiquetas ARIA lasciadas en inglés, texto alternativo nunca traducido, títulos de página sin cambiar, y etiquetas de formulario faltantes en versiones noinglés."
+      },
+      "fixes": {
+        "title": "Sugerencias de Corrección",
+        "description": "Genera sugerencias de corrección de traducción para cada problema específico de locale. Exporta como JSON y pégalo en tus archivos de locale."
+      },
+      "compliance": {
+        "title": "Listo para la Ley de Accesibilidad de la UE",
+        "description": "La Ley Europea de Accesibilidad (2025) requiere productos digitales accesibles en todos los idiomas soportados. Locali11y te ayuda a cumplir."
+      }
+    },
+    "howItWorks": {
+      "title": "Cómo Funciona",
+      "step1": {
+        "title": "Pega Tu URL",
+        "description": "Ingresa cualquier URL de sitio web multilingüe. Locali11y detecta automáticamente las versiones de idioma disponibles."
+      },
+      "step2": {
+        "title": "Ejecuta la Auditoría",
+        "description": "20 verificaciones de accesibilidad específicas se ejecutan en cada locale. Resultados comparados con tu idioma fuente."
+      },
+      "step3": {
+        "title": "Arregla Lo Roto",
+        "description": "Ve exactamente qué elementos están rotos en qué idiomas. Obtén sugerencias de corrección y expórtalas como JSON."
+      }
+    },
+    "stats": {
+      "checks": "20 Verificaciones",
+      "checksDesc": "Enfocadas en la intersección i18n × a11y",
+      "locales": "Cualquier Locale",
+      "localesDesc": "Autodetectado de tu sitio",
+      "time": "< 30 Segundos",
+      "timeDesc": "Auditoría comparativa completa"
+    }
+  }
+}

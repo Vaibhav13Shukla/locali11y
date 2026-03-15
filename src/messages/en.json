@@ -1,0 +1,314 @@
+{
+  "app": {
+    "name": "Locali11y",
+    "tagline": "Find the accessibility your translations broke.",
+    "poweredBy": "Powered by Lingo.dev"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "audits": "Audits",
+    "newAudit": "New Audit",
+    "signOut": "Sign out"
+  },
+  "landing": {
+    "hero": {
+      "title": "Your website is accessible in English.",
+      "titleHighlight": "What about Japanese?",
+      "subtitle": "Locali11y audits accessibility across every language version of your site. Find untranslated ARIA labels, missing alt text, and broken locale attributes — before your users do.",
+      "cta": "Start Free Audit",
+      "ctaSecondary": "See How It Works"
+    },
+    "features": {
+      "title": "What Locali11y Checks",
+      "comparative": {
+        "title": "Comparative Audit",
+        "description": "Checks 20 accessibility attributes across every locale and compares them to your source language. Finds issues that only exist in translated versions."
+      },
+      "localeSpecific": {
+        "title": "Locale-Specific Issues",
+        "description": "Identifies ARIA labels left in English, alt text never translated, page titles unchanged, and form labels missing in non-English versions."
+      },
+      "fixes": {
+        "title": "Fix Suggestions",
+        "description": "Generates translation fix suggestions for every locale-specific issue. Export as JSON and paste into your locale files."
+      },
+      "compliance": {
+        "title": "EU Accessibility Act Ready",
+        "description": "The European Accessibility Act (2025) requires accessible digital products across all supported languages. Locali11y helps you comply."
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Paste Your URL",
+        "description": "Enter any multilingual website URL. Locali11y auto-detects available language versions."
+      },
+      "step2": {
+        "title": "Run the Audit",
+        "description": "20 targeted accessibility checks run across every locale. Results compared against your source language."
+      },
+      "step3": {
+        "title": "Fix What's Broken",
+        "description": "See exactly which elements are broken in which languages. Get fix suggestions and export them as JSON."
+      }
+    },
+    "stats": {
+      "checks": "20 Checks",
+      "checksDesc": "Targeted at the i18n × a11y intersection",
+      "locales": "Any Locale",
+      "localesDesc": "Auto-detected from your site",
+      "time": "< 30 Seconds",
+      "timeDesc": "Full comparative audit"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Sign in to Locali11y",
+      "subtitle": "Enter your credentials to continue",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "••••••••",
+      "submit": "Sign in",
+      "noAccount": "Don't have an account?",
+      "signUpLink": "Sign up"
+    },
+    "register": {
+      "title": "Create your account",
+      "subtitle": "Start auditing accessibility across locales",
+      "fullNameLabel": "Full name",
+      "fullNamePlaceholder": "Jane Smith",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "At least 8 characters",
+      "submit": "Create account",
+      "hasAccount": "Already have an account?",
+      "signInLink": "Sign in"
+    },
+    "errors": {
+      "invalidCredentials": "Invalid email or password",
+      "emailTaken": "This email is already registered",
+      "weakPassword": "Password must be at least 8 characters",
+      "generic": "Something went wrong. Please try again."
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Your accessibility audits across locales",
+    "totalAudits": "Total Audits",
+    "avgScore": "Avg Score",
+    "localeIssues": "Locale-Specific Issues",
+    "recentAudits": "Recent Audits",
+    "noAudits": "No audits yet",
+    "noAuditsDescription": "Run your first audit to see how accessible your multilingual site really is.",
+    "startAudit": "Start your first audit"
+  },
+  "audit": {
+    "new": {
+      "title": "New Accessibility Audit",
+      "subtitle": "Enter a multilingual website URL to audit accessibility across locales",
+      "urlLabel": "Website URL",
+      "urlPlaceholder": "https://example.com",
+      "detectButton": "Detect Locales",
+      "detecting": "Detecting locales...",
+      "detectedLocales": "Detected Locales",
+      "sourceLocale": "Source Locale (baseline)",
+      "targetLocales": "Target Locales to Audit",
+      "manualLocale": "Add locale manually",
+      "addLocale": "Add",
+      "startAudit": "Run Audit",
+      "running": "Running audit...",
+      "runningDescription": "Fetching pages and running 20 accessibility checks across locales. This usually takes 10-30 seconds.",
+      "noLocalesDetected": "No alternate locales detected. You can add them manually.",
+      "errors": {
+        "invalidUrl": "Please enter a valid URL starting with https://",
+        "noLocales": "Please select at least one target locale",
+        "tooManyLocales": "Maximum 5 target locales per audit",
+        "fetchFailed": "Could not fetch the URL. Please check it's accessible.",
+        "auditFailed": "Audit failed. Please try again."
+      }
+    },
+    "results": {
+      "title": "Audit Results",
+      "subtitle": "Accessibility comparison across locales",
+      "overallScore": "Overall Score",
+      "sourceBaseline": "Source Baseline",
+      "worstLocale": "Worst Locale",
+      "localeSpecific": "Locale-Specific Issues",
+      "localeSpecificDescription": "Issues that exist only in translated versions, not in the source language",
+      "scoreLabel": "Score",
+      "issuesLabel": "Issues",
+      "localeIssuesLabel": "Locale Issues",
+      "viewDetails": "View Details",
+      "backToList": "Back to Audits",
+      "runAnother": "Run Another Audit",
+      "exportFixes": "Export Fixes",
+      "generateFixes": "Generate Fix Suggestions",
+      "generatingFixes": "Generating...",
+      "noIssues": "No issues found for this locale",
+      "allPassed": "All checks passed!"
+    },
+    "checks": {
+      "html-lang-present": {
+        "title": "HTML lang attribute",
+        "description": "Checks if the <html> tag has a lang attribute matching the page locale",
+        "failureDescription": "The <html> tag is missing or has an incorrect lang attribute for this locale",
+        "fixRecommendation": "Set the lang attribute on <html> to match the page locale"
+      },
+      "hreflang-tags": {
+        "title": "Hreflang alternate links",
+        "description": "Checks for <link rel=\"alternate\" hreflang> tags linking to other language versions",
+        "failureDescription": "Missing hreflang tags for alternate language versions",
+        "fixRecommendation": "Add <link rel=\"alternate\" hreflang=\"{locale}\" href=\"{url}\"> for each locale"
+      },
+      "img-alt-present": {
+        "title": "Image alt text present",
+        "description": "Checks that all <img> tags have non-empty alt attributes",
+        "failureDescription": "One or more images are missing alt text",
+        "fixRecommendation": "Add descriptive alt text to all images"
+      },
+      "img-alt-translated": {
+        "title": "Image alt text translated",
+        "description": "Compares alt text with the source locale to detect untranslated alt attributes",
+        "failureDescription": "Image alt text appears to be copied from the source locale without translation",
+        "fixRecommendation": "Translate the alt text to match this locale"
+      },
+      "aria-label-present": {
+        "title": "ARIA labels present",
+        "description": "Checks that elements with aria-label have non-empty values",
+        "failureDescription": "One or more elements have empty aria-label attributes",
+        "fixRecommendation": "Add translated aria-label values for screen reader users"
+      },
+      "aria-label-translated": {
+        "title": "ARIA labels translated",
+        "description": "Compares aria-label values with the source locale to detect untranslated labels",
+        "failureDescription": "ARIA labels appear to be left in the source language without translation",
+        "fixRecommendation": "Translate all aria-label values to match this locale"
+      },
+      "aria-describedby-valid": {
+        "title": "ARIA describedby targets have content",
+        "description": "Checks that elements referenced by aria-describedby exist and have text content",
+        "failureDescription": "An aria-describedby reference points to an empty or missing element",
+        "fixRecommendation": "Ensure the referenced element has translated text content"
+      },
+      "title-attr-present": {
+        "title": "Title attributes on links",
+        "description": "Checks that links and images with title attributes have non-empty values",
+        "failureDescription": "Title attributes are empty on interactive elements",
+        "fixRecommendation": "Add translated title attribute values"
+      },
+      "page-title-translated": {
+        "title": "Page title translated",
+        "description": "Checks if the <title> tag content differs from the source locale",
+        "failureDescription": "The page title appears identical to the source locale",
+        "fixRecommendation": "Translate the page <title> tag to match this locale"
+      },
+      "meta-description-translated": {
+        "title": "Meta description translated",
+        "description": "Checks if the meta description differs from the source locale",
+        "failureDescription": "The meta description appears identical to the source locale",
+        "fixRecommendation": "Translate the meta description for this locale"
+      },
+      "og-tags-translated": {
+        "title": "Open Graph tags translated",
+        "description": "Checks if og:title and og:description differ from the source locale",
+        "failureDescription": "Open Graph tags appear identical to the source locale",
+        "fixRecommendation": "Translate og:title and og:description for proper social media previews"
+      },
+      "button-text-present": {
+        "title": "Button text present",
+        "description": "Checks that all buttons have visible text content or aria-label",
+        "failureDescription": "One or more buttons have no accessible name",
+        "fixRecommendation": "Add translated text content or aria-label to all buttons"
+      },
+      "link-text-present": {
+        "title": "Link text present",
+        "description": "Checks that all links have visible text content or aria-label",
+        "failureDescription": "One or more links have no accessible name",
+        "fixRecommendation": "Add translated text content or aria-label to all links"
+      },
+      "form-labels-present": {
+        "title": "Form labels associated",
+        "description": "Checks that all form inputs have associated <label> elements with text",
+        "failureDescription": "One or more form inputs are missing associated labels",
+        "fixRecommendation": "Add translated <label> elements for all form inputs"
+      },
+      "placeholder-translated": {
+        "title": "Placeholder text translated",
+        "description": "Compares placeholder text with the source locale to detect untranslated placeholders",
+        "failureDescription": "Placeholder text appears identical to the source locale",
+        "fixRecommendation": "Translate placeholder text for this locale"
+      },
+      "dir-attribute": {
+        "title": "Direction attribute correct",
+        "description": "Checks that RTL locales have dir=\"rtl\" on the <html> tag",
+        "failureDescription": "This RTL locale is missing dir=\"rtl\" on the <html> tag",
+        "fixRecommendation": "Add dir=\"rtl\" to the <html> tag for RTL locales"
+      },
+      "heading-hierarchy": {
+        "title": "Heading hierarchy maintained",
+        "description": "Checks that heading levels (h1-h6) are in order without skipping levels",
+        "failureDescription": "Heading hierarchy is broken — levels are skipped",
+        "fixRecommendation": "Fix heading hierarchy to maintain proper h1 > h2 > h3 order"
+      },
+      "skip-navigation": {
+        "title": "Skip navigation link",
+        "description": "Checks for a skip-to-content link at the top of the page",
+        "failureDescription": "No skip navigation link found",
+        "fixRecommendation": "Add a translated skip-to-content link at the top of the page"
+      },
+      "empty-interactive": {
+        "title": "No empty interactive elements",
+        "description": "Checks that buttons and links are not empty after translation",
+        "failureDescription": "Interactive elements have no text content after translation",
+        "fixRecommendation": "Add translated text content to all interactive elements"
+      },
+      "submit-button-translated": {
+        "title": "Submit button translated",
+        "description": "Checks that submit button values are translated",
+        "failureDescription": "Submit button text appears identical to the source locale",
+        "fixRecommendation": "Translate the submit button value for this locale"
+      }
+    },
+    "severity": {
+      "critical": "Critical",
+      "important": "Important",
+      "info": "Info"
+    },
+    "categories": {
+      "lang": "Language",
+      "images": "Images",
+      "aria": "ARIA",
+      "forms": "Forms",
+      "meta": "Meta & SEO",
+      "navigation": "Navigation",
+      "headings": "Headings",
+      "seo": "SEO & Links"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "source": "Source",
+    "target": "Target",
+    "score": "Score",
+    "issues": "Issues",
+    "passed": "Passed",
+    "failed": "Failed",
+    "locale": "Locale",
+    "url": "URL",
+    "date": "Date",
+    "status": "Status",
+    "actions": "Actions"
+  }
+}

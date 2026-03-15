@@ -1,0 +1,166 @@
+{
+  "common": {
+    "source": "ソース",
+    "target": "ターゲット",
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました"
+  },
+  "nav": {
+    "dashboard": "ダッシュボード",
+    "audits": "監査",
+    "newAudit": "新規監査",
+    "signOut": "ログアウト"
+  },
+  "dashboard": {
+    "title": "アクセシビリティ監査",
+    "subtitle": "翻訳によって生じるアクセシビリティの問題を見つける",
+    "totalAudits": "監査総数",
+    "avgScore": "平均スコア",
+    "localeIssues": "ロケール固有の問題",
+    "recentAudits": "最近の監査",
+    "noAudits": "監査がありません",
+    "noAuditsDesc": "最初のアクセシビリティ監査を作成して開始"
+  },
+  "audit": {
+    "new": {
+      "title": "新規アクセシビリティ監査",
+      "subtitle": "ウェブサイトの翻訳固有アクセシビリティ問題を監査",
+      "urlLabel": "ウェブサイトURL",
+      "urlPlaceholder": "https://example.com",
+      "detectButton": "検出",
+      "detectedLocales": "検出されたロケール",
+      "noLocalesDetected": "追加のロケールが検出されませんでした",
+      "sourceLocale": "ソースロケール",
+      "targetLocales": "ターゲットロケール",
+      "manualLocale": "ロケールを追加",
+      "addLocale": "追加",
+      "startAudit": "アクセシビリティ監査を実行",
+      "running": "ウェブサイトを監査中",
+      "runningDescription": "時間がかかる場合があります。全ロケールでアクセシビリティをチェックしています。",
+      "errors": {
+        "invalidUrl": "http://またはhttps://で始まる有効なURLを入力してください",
+        "fetchFailed": "ウェブサイトの取得に失敗しました",
+        "noLocales": "少なくとも1つのターゲットロケールを選択してください",
+        "auditFailed": "監査の実行に失敗しました"
+      }
+    },
+    "results": {
+      "backToAudits": "監査に戻る",
+      "auditResults": "監査結果",
+      "runAnother": "別の監査を実行",
+      "sourceBaseline": "ソースベースライン",
+      "worstLocale": "最低スコア",
+      "localeSpecificIssues": "ロケール固有の問題",
+      "localeSpecificDesc": "翻訳バージョンにのみ存在する問題。ソース言語にはありません",
+      "overallScore": "総合スコア",
+      "allPassed": "すべてのチェックに合格しました！",
+      "generateFixes": "修正提案を生成",
+      "exportFixes": "修正をエクスポート"
+    },
+    "severity": {
+      "critical": "重大",
+      "important": "重要",
+      "info": "情報"
+    },
+    "categories": {
+      "aria": "ARIA",
+      "images": "画像",
+      "forms": "フォーム",
+      "headings": "見出し",
+      "navigation": "ナビゲーション",
+      "seo": "SEOとリンク",
+      "meta": "メタとSEO",
+      "lang": "言語"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "おかえりなさい",
+      "subtitle": "アカウントにサインインして続行",
+      "emailLabel": "メールアドレス",
+      "emailPlaceholder": "you@example.com",
+      "passwordLabel": "パスワード",
+      "passwordPlaceholder": "パスワードを入力",
+      "submit": "サインイン",
+      "noAccount": "アカウントをお持ちでないですか？",
+      "signUpLink": "サインアップ"
+    },
+    "register": {
+      "title": "アカウントを作成",
+      "subtitle": "翻訳間のアクセシビリティ監査を開始",
+      "fullNameLabel": "氏名",
+      "fullNamePlaceholder": "山田太郎",
+      "emailLabel": "メールアドレス",
+      "emailPlaceholder": "you@example.com",
+      "passwordLabel": "パスワード",
+      "passwordPlaceholder": "パスワードを作成",
+      "submit": "アカウント作成",
+      "hasAccount": "すでにアカウントをお持ちですか？",
+      "signInLink": "サインイン"
+    },
+    "errors": {
+      "generic": "エラーが発生しました。もう一度お試しください。"
+    }
+  },
+  "landing": {
+    "hero": {
+      "title": "あなたのウェブサイトは英語ではアクセシブルです。",
+      "titleHighlight": "日本語ではどうですか？",
+      "subtitle": "Locali11yはウェブサイトのすべての言語バージョンでアクセシビリティを監査します。翻訳されていないARIAラベル、欠落しているaltテキスト、壊れたlocale属性を — ユーザーが見つける前に検出します。",
+      "cta": "無料監査を開始",
+      "ctaSecondary": "仕組みを見る",
+      "trustedBy": "2,500以上のチームで使用中"
+    },
+    "demo": {
+      "title": "アクセシビリティ監査",
+      "complete": "完了",
+      "scoreEn": "英語",
+      "scoreJa": "日本語",
+      "scoreEs": "スペイン語",
+      "issue1": "スペイン語で翻訳されていないARIAラベル",
+      "issue2": "html lang属性が欠落しています"
+    },
+    "features": {
+      "title": "Locali11yがチェックすること",
+      "comparative": {
+        "title": "比較監査",
+        "description": "すべてのlocaleで20のアクセシビリティ属性をチェックし、ソース言語と比較します。翻訳版にのみ存在する問題を検出します。"
+      },
+      "localeSpecific": {
+        "title": "Locale固有の問題",
+        "description": "英語のままのARIAラベル、翻訳されていないaltテキスト、変更されていないページタイトル、非英語バージョンで欠落しているフォームラベルを特定します。"
+      },
+      "fixes": {
+        "title": "修正提案",
+        "description": "すべてのlocale固有の問題に対して翻訳の修正提案を生成します。JSONとしてエクスポートしてlocaleファイルに貼り付けられます。"
+      },
+      "compliance": {
+        "title": "EUアクセシビリティ法対応",
+        "description": "ヨーロッパアクセシビリティ法（2025年）は、すべての対応言語でアクセシブルなデジタル製品を要求します。Locali11yが準拠を支援します。"
+      }
+    },
+    "howItWorks": {
+      "title": "仕組み",
+      "step1": {
+        "title": "URLを貼り付け",
+        "description": "多言語ウェブサイトのURLを入力します。Locali11yは利用可能な言語バージョンを自動検出します。"
+      },
+      "step2": {
+        "title": "監査を実行",
+        "description": "20のターゲットアクセシビリティチェックが各localeで実行されます。結果はソース言語と比較されます。"
+      },
+      "step3": {
+        "title": "壊れたものを修正",
+        "description": "どの言語でどの要素が壊れているかを正確に表示します。修正提案を得てJSONとしてエクスポートできます。"
+      }
+    },
+    "stats": {
+      "checks": "20チェック",
+      "checksDesc": "i18n × a11yの交差部分をターゲット",
+      "locales": "任意のLocale",
+      "localesDesc": "サイト から自動検出",
+      "time": "30秒未満",
+      "timeDesc": "完全な比較監査"
+    }
+  }
+}
