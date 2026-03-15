@@ -68,8 +68,6 @@ export async function POST(request: Request, { params }: { params: Promise<{ id:
       locale: parsed.data.locale,
     }));
 
-    console.log("[FIXES] Issues to fix:", JSON.stringify(issueDescriptions, null, 2));
-
     const chatCompletion = await groqClient.chat.completions.create({
       messages: [
         {
@@ -92,12 +90,9 @@ export async function POST(request: Request, { params }: { params: Promise<{ id:
     let fixes: Array<{ id: string; suggestedFix: string }> = [];
     try {
       const content = chatCompletion.choices[0]?.message?.content ?? "{}";
-      console.log("[FIXES] AI response:", content);
       const parsed2 = JSON.parse(content);
       fixes = parsed2.fixes ?? parsed2.results ?? [];
-      console.log("[FIXES] Parsed fixes:", fixes.length);
-    } catch (e) {
-      console.error("[FIXES] Parse error:", e);
+    } catch {
       fixes = [];
     }
 

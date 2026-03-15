@@ -246,7 +246,7 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
               {tr("app.poweredBy")}
             </a>
           </div>
-          <p className="text-sm text-gray-400">© 2026 Locali11y. Built with Lingo.dev Multilingual Hackathon #3</p>
+          <p className="text-sm text-gray-400">© 2026 Locali11y. Built for Lingo.dev Multilingual Hackathon #3</p>
         </div>
       </footer>
     </div>
