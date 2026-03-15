@@ -1,5 +1,7 @@
 # Locali11y 🌍♿
 
+Multilingual Accessibility Auditing Tool - Find the accessibility your translations broke.
+
 <p align="center">
   <img src="https://img.shields.io/badge/Lingo.dev-Multilingual Hackathon 3rd-6B46C1?style=for-the-badge" alt="Lingo.dev Multilingual Hackathon">
   <img src="https://img.shields.io/badge/Next.js 16-000000?style=for-the-badge&logo=next.js" alt="Next.js 16">
@@ -44,7 +46,7 @@
 
 ## 🚀 Demo
 
-Try it now: **[locali11y.io](https://locali11y.io)**
+Try it now: **[https://locali11y.vercel.app/en](https://locali11y.vercel.app/en)**
 
 Or run locally:
 ```bash
